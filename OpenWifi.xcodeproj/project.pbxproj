@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EDF7699E8ACD0AE7457FBD /* NetworkHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43021A24EB303EED831D944B /* NetworkHealth.swift */; };
+		03FC1385996BD95A7284EF9F /* RouterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B44C863359AA2646B64 /* RouterAdapter.swift */; };
+		059D6481E66028362AD17C6A /* OpenWifiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7265EAE2BFF6BED3D37F7 /* OpenWifiApp.swift */; };
+		08E25E07D56339583F63C861 /* PresenceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C52EA3EB06DC464323AD26 /* PresenceTrackerTests.swift */; };
+		09435125243AC96A86BBC636 /* TrafficRateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11720CC848775679119F6A4 /* TrafficRateCalculatorTests.swift */; };
+		0A29EBF612A3FFB97EE6B775 /* MockNetworkPathObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F0391AE4A4DF01942622B /* MockNetworkPathObserver.swift */; };
+		17C6F43B55A2C1E673CD543F /* ProbeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4364C02C53685D35FF987D6F /* ProbeResult.swift */; };
+		1BC3425CE3F494A90CCCF249 /* NetworkPathState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42EAE77D1A4710D34FFC94 /* NetworkPathState.swift */; };
+		278DF3D239873FC3E4A5A61F /* RouterTrafficSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C24FF854901715AD2A112E /* RouterTrafficSample.swift */; };
+		31E1BDED53C39E969E7FB2B0 /* HealthSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088D0D7F31EDD974919028E /* HealthSection.swift */; };
+		331FB8B7681B9135EA3DC73A /* TrafficRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A1203AEB6567E2E42A6D2 /* TrafficRate.swift */; };
+		3C01F1CA2597968E31FFBB75 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A094717B16458B3820B07DE /* DataSource.swift */; };
+		442532CDD72C3D9F129F6232 /* MockLatencyProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976CCA1C5E90ADE0A277042 /* MockLatencyProbe.swift */; };
+		49A87B806D38F98DF81FF939 /* PresenceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE2A34E660F9958499F941 /* PresenceTracker.swift */; };
+		4AF344AE4232657DB549BC5B /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F84D43F05AFA1C3551C2FF /* DeviceRow.swift */; };
+		54D0DF6B52ACE1AC847C86F9 /* DeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C097F4DD21037297BAE55D /* DeviceDiscovery.swift */; };
+		593BC5747849F9E3DD09B78A /* InterfaceTrafficSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E41A214EBE8EE49C4FE91 /* InterfaceTrafficSampler.swift */; };
+		64283E7FD8E897EC79983CF1 /* ActionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129F45AF459E196639D7553C /* ActionsBar.swift */; };
+		64640F24825127098A13ED08 /* LatencyWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F57DBD31A9306F05FE9E /* LatencyWindowTests.swift */; };
+		6A7EBD68BBE480F44CA4601F /* MonitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9470037E12F7795F410BCF /* MonitorViewModel.swift */; };
+		6FC9E006E5B070BB9EF69CE9 /* RouterCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23984A0676496E8C1E610FE /* RouterCapabilities.swift */; };
+		75FE1104D719504CF1A84703 /* LatencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4851865EFCD39FADAEBFC4F1 /* LatencyRow.swift */; };
+		76EB5934C5911587B1425321 /* DiscoveredHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB91F59AB70725AEABFFD14 /* DiscoveredHost.swift */; };
+		7EFF919DA33C7DB00FBBCED7 /* MetricSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0246A99CCD00E4F0F2D78 /* MetricSample.swift */; };
+		8318A00C6907373FA57E5335 /* TrafficSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A99C210638E03B470384B /* TrafficSection.swift */; };
+		88592ECE75AA8DD528B527BB /* LatencyProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A49465C5BC9230771A9EDF1 /* LatencyProbe.swift */; };
+		8B900FC0B98D68FF77668AD5 /* NetworkPathObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74EC34AF462AD7576226737 /* NetworkPathObserver.swift */; };
+		91E797D93DE63CB7E7FA5A40 /* InterfaceCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854366F7616522F1D555DAF /* InterfaceCounters.swift */; };
+		95BC1173C320EAFDADCAA4C4 /* ProbeMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFE1FB155CD47C516507F8 /* ProbeMethod.swift */; };
+		9CA266AF04E675BA02AD9A37 /* TrafficRateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53B6C907A0184FA8B11AE0 /* TrafficRateCalculator.swift */; };
+		A655A5D1398D5407A436E27E /* MockDeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64A79BD5EDA51D39FA3CA /* MockDeviceDiscovery.swift */; };
+		B44A2DBF8EF70812CC79D2B1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ECE98F3104F352A34F9B22 /* Strings.swift */; };
+		B9CFB1446D7A671E5476C6A2 /* DeviceListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5126D05195B17FDA792CA0D4 /* DeviceListSection.swift */; };
+		BD383FA96A33BAC4ED6C6783 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0DF93A08910E94E3211669 /* PopoverView.swift */; };
+		CB0354C13956C274A1874D29 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D12F2C617E315E51D93B5D3 /* HeaderView.swift */; };
+		D53E49E2465887F92B3C899F /* DomainPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7FBE9D208DA03CB0F9CDA9 /* DomainPresentation.swift */; };
+		DB2F1AF6684981FCC00969CE /* NetworkHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F67034281238A1724847F7 /* NetworkHealthTests.swift */; };
+		DF1FB57E340BE52D71C78DF3 /* LatencyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C244363739703947386856 /* LatencyWindow.swift */; };
+		E4CA91C3E26F6F13EA37E1B4 /* RouterDeviceSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0C8DA73A41E6D1ECA8EFB /* RouterDeviceSnapshot.swift */; };
+		E6EB9160F0F320F4BE7BCC91 /* PresenceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C62B1BBDAB8864300B781 /* PresenceState.swift */; };
+		E8780C7E2211FDA8AC58CE57 /* LatencyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB66DC72E33E4F1424267D /* LatencyStats.swift */; };
+		F3A8A00C8B0B48EEA6292193 /* NetworkDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D9CA428A46FA32A42063A2 /* NetworkDevice.swift */; };
+		F968DBFF97CAAAD8A61DEC55 /* MockInterfaceTrafficSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C48275173D301C568662D /* MockInterfaceTrafficSampler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48C93B35648C28C9E7232FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 716C3D66FD81D465511B5FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89A44D21385A91FFB076A268;
+			remoteInfo = OpenWifi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048F4BBB4F6C0D2CCE185A57 /* OpenWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D12F2C617E315E51D93B5D3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		129F45AF459E196639D7553C /* ActionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsBar.swift; sourceTree = "<group>"; };
+		2A8F0391AE4A4DF01942622B /* MockNetworkPathObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkPathObserver.swift; sourceTree = "<group>"; };
+		2AB64A79BD5EDA51D39FA3CA /* MockDeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceDiscovery.swift; sourceTree = "<group>"; };
+		2B0DF93A08910E94E3211669 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		2EB91F59AB70725AEABFFD14 /* DiscoveredHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveredHost.swift; sourceTree = "<group>"; };
+		30F67034281238A1724847F7 /* NetworkHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHealthTests.swift; sourceTree = "<group>"; };
+		37C244363739703947386856 /* LatencyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyWindow.swift; sourceTree = "<group>"; };
+		3A094717B16458B3820B07DE /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		43021A24EB303EED831D944B /* NetworkHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHealth.swift; sourceTree = "<group>"; };
+		4364C02C53685D35FF987D6F /* ProbeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbeResult.swift; sourceTree = "<group>"; };
+		4851865EFCD39FADAEBFC4F1 /* LatencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyRow.swift; sourceTree = "<group>"; };
+		4854366F7616522F1D555DAF /* InterfaceCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceCounters.swift; sourceTree = "<group>"; };
+		4FFB66DC72E33E4F1424267D /* LatencyStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyStats.swift; sourceTree = "<group>"; };
+		5126D05195B17FDA792CA0D4 /* DeviceListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListSection.swift; sourceTree = "<group>"; };
+		56C097F4DD21037297BAE55D /* DeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscovery.swift; sourceTree = "<group>"; };
+		59C52EA3EB06DC464323AD26 /* PresenceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceTrackerTests.swift; sourceTree = "<group>"; };
+		68F84D43F05AFA1C3551C2FF /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		6A49465C5BC9230771A9EDF1 /* LatencyProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyProbe.swift; sourceTree = "<group>"; };
+		6A7FBE9D208DA03CB0F9CDA9 /* DomainPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainPresentation.swift; sourceTree = "<group>"; };
+		6FFA46EF38F6CF65EF2ACDFE /* OpenWifiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWifiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B90F57DBD31A9306F05FE9E /* LatencyWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyWindowTests.swift; sourceTree = "<group>"; };
+		7E42EAE77D1A4710D34FFC94 /* NetworkPathState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPathState.swift; sourceTree = "<group>"; };
+		8E6E41A214EBE8EE49C4FE91 /* InterfaceTrafficSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceTrafficSampler.swift; sourceTree = "<group>"; };
+		8E9C59251D400888D1607999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		902A1203AEB6567E2E42A6D2 /* TrafficRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRate.swift; sourceTree = "<group>"; };
+		9B9470037E12F7795F410BCF /* MonitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorViewModel.swift; sourceTree = "<group>"; };
+		9DB0C8DA73A41E6D1ECA8EFB /* RouterDeviceSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDeviceSnapshot.swift; sourceTree = "<group>"; };
+		A0B0246A99CCD00E4F0F2D78 /* MetricSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricSample.swift; sourceTree = "<group>"; };
+		A5C7265EAE2BFF6BED3D37F7 /* OpenWifiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWifiApp.swift; sourceTree = "<group>"; };
+		A9959B44C863359AA2646B64 /* RouterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAdapter.swift; sourceTree = "<group>"; };
+		AF53B6C907A0184FA8B11AE0 /* TrafficRateCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRateCalculator.swift; sourceTree = "<group>"; };
+		B23984A0676496E8C1E610FE /* RouterCapabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterCapabilities.swift; sourceTree = "<group>"; };
+		B3ECE98F3104F352A34F9B22 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C8C24FF854901715AD2A112E /* RouterTrafficSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTrafficSample.swift; sourceTree = "<group>"; };
+		C9AE2A34E660F9958499F941 /* PresenceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceTracker.swift; sourceTree = "<group>"; };
+		D088D0D7F31EDD974919028E /* HealthSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSection.swift; sourceTree = "<group>"; };
+		D09A99C210638E03B470384B /* TrafficSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficSection.swift; sourceTree = "<group>"; };
+		E11720CC848775679119F6A4 /* TrafficRateCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRateCalculatorTests.swift; sourceTree = "<group>"; };
+		E74EC34AF462AD7576226737 /* NetworkPathObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPathObserver.swift; sourceTree = "<group>"; };
+		E976CCA1C5E90ADE0A277042 /* MockLatencyProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLatencyProbe.swift; sourceTree = "<group>"; };
+		F51C48275173D301C568662D /* MockInterfaceTrafficSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInterfaceTrafficSampler.swift; sourceTree = "<group>"; };
+		F6D9CA428A46FA32A42063A2 /* NetworkDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDevice.swift; sourceTree = "<group>"; };
+		F7DFE1FB155CD47C516507F8 /* ProbeMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbeMethod.swift; sourceTree = "<group>"; };
+		F90C62B1BBDAB8864300B781 /* PresenceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0277D6625C3B1B8074F9F36F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048F4BBB4F6C0D2CCE185A57 /* OpenWifi.app */,
+				6FFA46EF38F6CF65EF2ACDFE /* OpenWifiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EEE14DEDDE1DED1EBD3CC59 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2AB64A79BD5EDA51D39FA3CA /* MockDeviceDiscovery.swift */,
+				F51C48275173D301C568662D /* MockInterfaceTrafficSampler.swift */,
+				E976CCA1C5E90ADE0A277042 /* MockLatencyProbe.swift */,
+				2A8F0391AE4A4DF01942622B /* MockNetworkPathObserver.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		11B991B828701AD3D6FBCA5E /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				129F45AF459E196639D7553C /* ActionsBar.swift */,
+				5126D05195B17FDA792CA0D4 /* DeviceListSection.swift */,
+				68F84D43F05AFA1C3551C2FF /* DeviceRow.swift */,
+				0D12F2C617E315E51D93B5D3 /* HeaderView.swift */,
+				D088D0D7F31EDD974919028E /* HealthSection.swift */,
+				4851865EFCD39FADAEBFC4F1 /* LatencyRow.swift */,
+				2B0DF93A08910E94E3211669 /* PopoverView.swift */,
+				D09A99C210638E03B470384B /* TrafficSection.swift */,
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		120044BC9EDF864467171644 /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				D44BE85892E07B24948B7C8B /* Logic */,
+				0EEE14DEDDE1DED1EBD3CC59 /* Mocks */,
+				DF679C5205AB8570CB33AE31 /* Ports */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
+		1C54D04587D8C4E8A8A107B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EB91F59AB70725AEABFFD14 /* DiscoveredHost.swift */,
+				4854366F7616522F1D555DAF /* InterfaceCounters.swift */,
+				4FFB66DC72E33E4F1424267D /* LatencyStats.swift */,
+				A0B0246A99CCD00E4F0F2D78 /* MetricSample.swift */,
+				F6D9CA428A46FA32A42063A2 /* NetworkDevice.swift */,
+				7E42EAE77D1A4710D34FFC94 /* NetworkPathState.swift */,
+				4364C02C53685D35FF987D6F /* ProbeResult.swift */,
+				902A1203AEB6567E2E42A6D2 /* TrafficRate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AD01C3770197237962E6935 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				3A094717B16458B3820B07DE /* DataSource.swift */,
+				43021A24EB303EED831D944B /* NetworkHealth.swift */,
+				F90C62B1BBDAB8864300B781 /* PresenceState.swift */,
+				F7DFE1FB155CD47C516507F8 /* ProbeMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		415C745CDE388C860C448DA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B9470037E12F7795F410BCF /* MonitorViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		594A26DA8CC7A0403C3FD627 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F57DBD31A9306F05FE9E /* LatencyWindowTests.swift */,
+				30F67034281238A1724847F7 /* NetworkHealthTests.swift */,
+				59C52EA3EB06DC464323AD26 /* PresenceTrackerTests.swift */,
+				E11720CC848775679119F6A4 /* TrafficRateCalculatorTests.swift */,
+			);
+			name = Unit;
+			path = Tests/Unit;
+			sourceTree = "<group>";
+		};
+		819B62CD7B2B52B0870F6450 /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				A9959B44C863359AA2646B64 /* RouterAdapter.swift */,
+				D10915D4A80CE411B969AE70 /* Models */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		9499FFD4445D58786C906B9B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				415C745CDE388C860C448DA0 /* Model */,
+				11B991B828701AD3D6FBCA5E /* Popover */,
+				D9662BC842C260425C76A6E4 /* Presentation */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F6B22327EACC05E2200A9DB = {
+			isa = PBXGroup;
+			children = (
+				A0EFC27359DB30A45C70FBFD /* OpenWifi */,
+				594A26DA8CC7A0403C3FD627 /* Unit */,
+				0277D6625C3B1B8074F9F36F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0EFC27359DB30A45C70FBFD /* OpenWifi */ = {
+			isa = PBXGroup;
+			children = (
+				C5184BC78C50D693E9A29438 /* App */,
+				E852E751FAA565D8945FA211 /* Domain */,
+				819B62CD7B2B52B0870F6450 /* Integrations */,
+				120044BC9EDF864467171644 /* Monitoring */,
+				BDF656AF392A7650E77DB50D /* Resources */,
+				9499FFD4445D58786C906B9B /* UI */,
+			);
+			path = OpenWifi;
+			sourceTree = "<group>";
+		};
+		BDF656AF392A7650E77DB50D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E9C59251D400888D1607999 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5184BC78C50D693E9A29438 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5C7265EAE2BFF6BED3D37F7 /* OpenWifiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10915D4A80CE411B969AE70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B23984A0676496E8C1E610FE /* RouterCapabilities.swift */,
+				9DB0C8DA73A41E6D1ECA8EFB /* RouterDeviceSnapshot.swift */,
+				C8C24FF854901715AD2A112E /* RouterTrafficSample.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D44BE85892E07B24948B7C8B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				37C244363739703947386856 /* LatencyWindow.swift */,
+				C9AE2A34E660F9958499F941 /* PresenceTracker.swift */,
+				AF53B6C907A0184FA8B11AE0 /* TrafficRateCalculator.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		D9662BC842C260425C76A6E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6A7FBE9D208DA03CB0F9CDA9 /* DomainPresentation.swift */,
+				B3ECE98F3104F352A34F9B22 /* Strings.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DF679C5205AB8570CB33AE31 /* Ports */ = {
+			isa = PBXGroup;
+			children = (
+				56C097F4DD21037297BAE55D /* DeviceDiscovery.swift */,
+				8E6E41A214EBE8EE49C4FE91 /* InterfaceTrafficSampler.swift */,
+				6A49465C5BC9230771A9EDF1 /* LatencyProbe.swift */,
+				E74EC34AF462AD7576226737 /* NetworkPathObserver.swift */,
+			);
+			path = Ports;
+			sourceTree = "<group>";
+		};
+		E852E751FAA565D8945FA211 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3AD01C3770197237962E6935 /* Enums */,
+				1C54D04587D8C4E8A8A107B4 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FADC91B54C66D19FA749D0A /* OpenWifiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867D44C4D65300DB359A6A5A /* Build configuration list for PBXNativeTarget "OpenWifiTests" */;
+			buildPhases = (
+				48AABA18760330444217DB6C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBADBB0C7C487534F8E595EF /* PBXTargetDependency */,
+			);
+			name = OpenWifiTests;
+			packageProductDependencies = (
+			);
+			productName = OpenWifiTests;
+			productReference = 6FFA46EF38F6CF65EF2ACDFE /* OpenWifiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89A44D21385A91FFB076A268 /* OpenWifi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA986B1AD68F8E2868C2910 /* Build configuration list for PBXNativeTarget "OpenWifi" */;
+			buildPhases = (
+				A39DEDEF8CAA0BA1F9123A5F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenWifi;
+			packageProductDependencies = (
+			);
+			productName = OpenWifi;
+			productReference = 048F4BBB4F6C0D2CCE185A57 /* OpenWifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716C3D66FD81D465511B5FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7FADC91B54C66D19FA749D0A = {
+						ProvisioningStyle = Manual;
+					};
+					89A44D21385A91FFB076A268 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B2C7EE0C8D1D0B488D38796E /* Build configuration list for PBXProject "OpenWifi" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9F6B22327EACC05E2200A9DB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0277D6625C3B1B8074F9F36F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89A44D21385A91FFB076A268 /* OpenWifi */,
+				7FADC91B54C66D19FA749D0A /* OpenWifiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48AABA18760330444217DB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64640F24825127098A13ED08 /* LatencyWindowTests.swift in Sources */,
+				DB2F1AF6684981FCC00969CE /* NetworkHealthTests.swift in Sources */,
+				08E25E07D56339583F63C861 /* PresenceTrackerTests.swift in Sources */,
+				09435125243AC96A86BBC636 /* TrafficRateCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39DEDEF8CAA0BA1F9123A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64283E7FD8E897EC79983CF1 /* ActionsBar.swift in Sources */,
+				3C01F1CA2597968E31FFBB75 /* DataSource.swift in Sources */,
+				54D0DF6B52ACE1AC847C86F9 /* DeviceDiscovery.swift in Sources */,
+				B9CFB1446D7A671E5476C6A2 /* DeviceListSection.swift in Sources */,
+				4AF344AE4232657DB549BC5B /* DeviceRow.swift in Sources */,
+				76EB5934C5911587B1425321 /* DiscoveredHost.swift in Sources */,
+				D53E49E2465887F92B3C899F /* DomainPresentation.swift in Sources */,
+				CB0354C13956C274A1874D29 /* HeaderView.swift in Sources */,
+				31E1BDED53C39E969E7FB2B0 /* HealthSection.swift in Sources */,
+				91E797D93DE63CB7E7FA5A40 /* InterfaceCounters.swift in Sources */,
+				593BC5747849F9E3DD09B78A /* InterfaceTrafficSampler.swift in Sources */,
+				88592ECE75AA8DD528B527BB /* LatencyProbe.swift in Sources */,
+				75FE1104D719504CF1A84703 /* LatencyRow.swift in Sources */,
+				E8780C7E2211FDA8AC58CE57 /* LatencyStats.swift in Sources */,
+				DF1FB57E340BE52D71C78DF3 /* LatencyWindow.swift in Sources */,
+				7EFF919DA33C7DB00FBBCED7 /* MetricSample.swift in Sources */,
+				A655A5D1398D5407A436E27E /* MockDeviceDiscovery.swift in Sources */,
+				F968DBFF97CAAAD8A61DEC55 /* MockInterfaceTrafficSampler.swift in Sources */,
+				442532CDD72C3D9F129F6232 /* MockLatencyProbe.swift in Sources */,
+				0A29EBF612A3FFB97EE6B775 /* MockNetworkPathObserver.swift in Sources */,
+				6A7EBD68BBE480F44CA4601F /* MonitorViewModel.swift in Sources */,
+				F3A8A00C8B0B48EEA6292193 /* NetworkDevice.swift in Sources */,
+				03EDF7699E8ACD0AE7457FBD /* NetworkHealth.swift in Sources */,
+				8B900FC0B98D68FF77668AD5 /* NetworkPathObserver.swift in Sources */,
+				1BC3425CE3F494A90CCCF249 /* NetworkPathState.swift in Sources */,
+				059D6481E66028362AD17C6A /* OpenWifiApp.swift in Sources */,
+				BD383FA96A33BAC4ED6C6783 /* PopoverView.swift in Sources */,
+				E6EB9160F0F320F4BE7BCC91 /* PresenceState.swift in Sources */,
+				49A87B806D38F98DF81FF939 /* PresenceTracker.swift in Sources */,
+				95BC1173C320EAFDADCAA4C4 /* ProbeMethod.swift in Sources */,
+				17C6F43B55A2C1E673CD543F /* ProbeResult.swift in Sources */,
+				03FC1385996BD95A7284EF9F /* RouterAdapter.swift in Sources */,
+				6FC9E006E5B070BB9EF69CE9 /* RouterCapabilities.swift in Sources */,
+				E4CA91C3E26F6F13EA37E1B4 /* RouterDeviceSnapshot.swift in Sources */,
+				278DF3D239873FC3E4A5A61F /* RouterTrafficSample.swift in Sources */,
+				B44A2DBF8EF70812CC79D2B1 /* Strings.swift in Sources */,
+				331FB8B7681B9135EA3DC73A /* TrafficRate.swift in Sources */,
+				9CA266AF04E675BA02AD9A37 /* TrafficRateCalculator.swift in Sources */,
+				8318A00C6907373FA57E5335 /* TrafficSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBADBB0C7C487534F8E595EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89A44D21385A91FFB076A268 /* OpenWifi */;
+			targetProxy = 48C93B35648C28C9E7232FE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		149324446C2A67B29A80CD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.openwifi.OpenWifiTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenWifi.app/Contents/MacOS/OpenWifi";
+			};
+			name = Debug;
+		};
+		3C681645657184748F57013B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenWifi/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.openwifi.OpenWifi;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5EA647DB595BD9AB12152157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A62133408C7BDFDDCA89CC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C3E2796DE425E910DA91C93F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenWifi/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.openwifi.OpenWifi;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E58D3E65268A2BA46EF3066B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.openwifi.OpenWifiTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenWifi.app/Contents/MacOS/OpenWifi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BA986B1AD68F8E2868C2910 /* Build configuration list for PBXNativeTarget "OpenWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E2796DE425E910DA91C93F /* Debug */,
+				3C681645657184748F57013B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		867D44C4D65300DB359A6A5A /* Build configuration list for PBXNativeTarget "OpenWifiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149324446C2A67B29A80CD52 /* Debug */,
+				E58D3E65268A2BA46EF3066B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2C7EE0C8D1D0B488D38796E /* Build configuration list for PBXProject "OpenWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62133408C7BDFDDCA89CC20 /* Debug */,
+				5EA647DB595BD9AB12152157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 716C3D66FD81D465511B5FAB /* Project object */;
+}
