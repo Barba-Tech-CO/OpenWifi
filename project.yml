@@ -1,0 +1,56 @@
+name: OpenWifi
+options:
+  bundleIdPrefix: dev.openwifi
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+targets:
+  OpenWifi:
+    type: application
+    platform: macOS
+    sources:
+      - OpenWifi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.openwifi.OpenWifi
+    info:
+      path: OpenWifi/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: OpenWifi
+        LSUIElement: true
+        NSLocalNetworkUsageDescription: OpenWifi looks for devices on your local network to show which ones are present.
+        NSBonjourServices:
+          - _airplay._tcp
+          - _companion-link._tcp
+          - _device-info._tcp
+          - _homekit._tcp
+          - _googlecast._tcp
+          - _ipp._tcp
+          - _smb._tcp
+  OpenWifiTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/Unit
+    dependencies:
+      - target: OpenWifi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.openwifi.OpenWifiTests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  OpenWifi:
+    build:
+      targets:
+        OpenWifi: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - OpenWifiTests
