@@ -1,1 +1,10 @@
 docs/PRD.md
+
+# Generated / local
+OpenWifi/Resources/Info.plist
+build/
+DerivedData/
+xcuserdata/
+.swiftpm/
+.DS_Store
+.claude/tmp/
